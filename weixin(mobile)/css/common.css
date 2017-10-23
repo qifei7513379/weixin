@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* v1.1.0 */
+* { box-sizing:border-box;}
+html,body{ height:100%; font-family:HiraginoSansGB, Helvetica, sans-serif; color:#333}
+body{ background-color:#fff;  font-size:14px;}
+html,body,ul,ol,dt,dd,dl,p,h1,h2,h3,h4,h5,from,fieldset,button,input{ margin:0; padding:0;}
+body,input,li,div,td,h1,h2,h3,h4,h5{ color:#333;font-family:HiraginoSansGB;}
+ul li{ list-style:none;}
+img,button,fieldset{ border:0; margin:0;}
+a,a:active,a:link,a:visited { text-decoration:none; color:#333;}
+
+

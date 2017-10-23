@@ -1,0 +1,87 @@
+/*!
+ * LABELAUTY jQuery Plugin Styles
+ *
+ * @file: jquery-labelauty.css
+ * @author: Francisco Neves (@fntneves)
+ * @site: www.francisconeves.com
+ * @license: MIT License
+ */
+
+/* Prevent text and blocks selection */
+/*input.labelauty + label ::selection { background-color: rgba(255, 255, 255, 0); }
+input.labelauty + label ::-moz-selection { background-color: rgba(255, 255, 255, 0); }*/
+
+/* Hide original checkboxes. They are ugly! */
+/*input.labelauty { display: none !important; }
+
+input.labelauty + label > span.labelauty-unchecked-image,
+input.labelauty + label > span.labelauty-checked-image
+{
+	display: none;
+}*/
+
+/* When there's a label, add a little margin to the left */
+
+/* When not Checked */
+input.labelauty:not(:checked)
+{
+	background-color: white;
+	border: 0.0166rem solid rgb(102,102,102);
+	color: rgb(102,102,102);
+}
+input.labelauty:not(:checked) + label > span.labelauty-checked-image
+{
+	display: none;
+}
+
+input.labelauty:not(:checked) + label > span.labelauty-checked
+{
+	display: none;
+}
+
+/* When Checked */
+input.labelauty:checked + label
+{
+	color: white;border: 0.036rem solid rgb(102,102,102);width: 100%;height: 100%;display: block;
+}
+
+input.labelauty:checked:not([disabled])+label
+{
+	background-color: rgb(102,102,102)
+}
+input.labelauty:checked + label > span.labelauty-unchecked-image
+{
+	display: none;
+}
+
+input.labelauty:checked + label > span.labelauty-unchecked
+{
+	display: none;
+}
+
+input.labelauty:checked + label > span.labelauty-checked
+{
+	display: inline-block;
+}
+
+/*input.labelauty.no-label:checked + label > span.labelauty-checked
+{
+	display: block;
+}*/
+
+/* When Disabled */
+/*input.labelauty[disabled] + label
+{
+	opacity: 0.5;
+}*/
+
+ /*Add a background to (un)checked images*/ 
+/*input.labelauty + label > span.labelauty-unchecked-image
+{
+	background-image: url(../images/input-unchecked.png);
+}
+
+input.labelauty + label > span.labelauty-checked-image
+{
+	background-image: url(../images/input-checked.png);
+}*/
