@@ -85,11 +85,11 @@
 .foot2 .foot2-blur3{background:url(../images/footer-3.png) no-repeat;background-position: 50% 30%;background-size:auto 25%;}
 .foot2 .foot2-blur4{background:url(../images/footer-4.png) no-repeat;background-position: 50% 30%;background-size:auto 25%;}
 .foot2 .foot2-blur5{background:url(../images/footer-5.png) no-repeat;background-position: 50% 30%;background-size:auto 25%;}
-.foot2 .foot2-active1{color: #ffd947;background: url(../images/footer-ac-1.png) no-repeat;background-position: 50% 30%;background-size:auto 25%;}
-.foot2 .foot2-active2{color: #ffd947;background: url(../images/footer-ac-2.png) no-repeat;background-position: 50% 30%;background-size:auto 25%;}
-.foot2 .foot2-active3{color: #ffd947;background: url(../images/footer-ac-3.png) no-repeat;background-position: 50% 30%;background-size:auto 25%;}
-.foot2 .foot2-active4{color: #ffd947;background: url(../images/footer-ac-4.png) no-repeat;background-position: 50% 30%;background-size:auto 25%;}
-.foot2 .foot2-active5{color: #ffd947;background: url(../images/footer-ac-5.png) no-repeat;background-position: 50% 30%;background-size:auto 25%;}
+.foot2 .on:nth-child(1){color: #ffd947;background: url(../images/footer-ac-1.png) no-repeat;background-position: 50% 30%;background-size:auto 25%;}
+.foot2 .on:nth-child(2){color: #ffd947;background: url(../images/footer-ac-2.png) no-repeat;background-position: 50% 30%;background-size:auto 25%;}
+.foot2 .on:nth-child(3){color: #ffd947;background: url(../images/footer-ac-3.png) no-repeat;background-position: 50% 30%;background-size:auto 25%;}
+.foot2 .on:nth-child(4){color: #ffd947;background: url(../images/footer-ac-4.png) no-repeat;background-position: 50% 30%;background-size:auto 25%;}
+.foot2 .on:nth-child(5){color: #ffd947;background: url(../images/footer-ac-5.png) no-repeat;background-position: 50% 30%;background-size:auto 25%;}
 
 
 /*zhanwei*/
@@ -191,10 +191,10 @@
 
 .my-publish-tab01-list{width: 100%;height: 1.4608rem;overflow: hidden;background-color: white;}
 .my-publish-tab01-list li{float: left;width: 25%;height: 1.4608rem;}
-.my-publish-tab01-list li div{width: 1.66rem;height: 1.4608rem;font-size: 0.4648rem;line-height: 1.4608rem;text-align: center;color: #666;margin: 0 auto;}
-.my-publish-tab01-list li div a{display: block;width: 100%;height: 100%;}
+.my-publish-tab01-list li div{height: 1.4608rem;font-size: 0.4648rem;line-height: 1.4608rem;text-align: center;margin: 0 auto;}
+.my-publish-tab01-list li div a{display: block;width: 100%;height: 100%;color: #666;}
 .my-publish-tab01-list .my-publish-tab01-active{border-bottom:0.0664rem solid black;color: black;}
-
+.my-publish-tab01-list .my-publish-tab01-active a{color: black;}
 
 /*我的发布-活动*/
 .my-publish-tab02{width: 100%;height:1.992rem;overflow: hidden;border-bottom: 0.0166rem solid rgb(222,222,222);}
@@ -250,7 +250,44 @@
 
 /*我的发布-问答*/
 .my-publish-index-list .my-publish-ask-info{height: auto;width: 100%;}
-.my-publish-index-list .my-publish-ask-info h3{margin-bottom: 0.3rem;font-size: 0.4648rem;font-weight: bold;background: url(../images/coin-1.png) no-repeat;background-size:6% ;padding-left: 1rem;}
+.my-publish-index-list .my-publish-ask-info h3{margin-bottom: 0.3rem;font-size: 0.4648rem;font-weight: bold;background: url(../images/coin-1.png) no-repeat;background-size:auto 100% ;padding-left: 1rem;}
 .my-publish-index-list .my-publish-ask-info ul{overflow: hidden;padding-left: 1rem;}
-.my-publish-index-list .my-publish-ask-info ul li:nth-child(1){float: left;font-size: 0.332rem;}
+.my-publish-index-list .my-publish-ask-info ul li:nth-child(1){float: left;font-size: 0.332rem;color: #999;}
 .my-publish-index-list .my-publish-ask-info ul li:nth-child(2){float: right;font-size: 0.332rem;color: #999;}
+
+
+
+/*活动*/
+
+body .active-list{margin-top: 0;background-color: white;}
+body .active-list li:nth-child(1){margin-top: 0;border-bottom: 0.0166rem solid rgb(225,225,225);}
+
+
+.business-tab .my-publish-tab01-list li{width: 20%;}
+.business-tab {border-bottom: 0.0166rem solid rgb(245,245,245);}
+
+body .business-list{background-color: white;}
+
+.ask-list{background-color: white;}
+.ask-list .ask01-list li{border: none;}
+.ask-list .ask01-list li a span{border: 0.0166rem solid #999;color: #999;}
+.ask-info p{font-size: 0.3984rem;padding-left: 1rem;background: url(../images/coin-2.png) no-repeat;background-size: auto 30%;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden;line-height: 0.7rem;margin-bottom: 0.3rem;}
+.ask-info h3{font-size: 0.4648rem;}
+
+
+/*干货*/
+.ganhuo-list{background-color: white;overflow: hidden;}
+.ganhuo-list li{width: 44%;margin-left: 4%;margin-top: 0.498rem;float: left;}
+.ganhuo-list li img{width: 100%;height: 3.0876rem;border-radius: 0.166rem;}
+.ganhuo-list li h3{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;font-size: 0.4316rem;line-height: 0.7rem;}
+.ganhuo-list li h5{font-size:0.2988rem ;color:#666;line-height: 0.6rem;}
+
+
+.haowu-list{margin-top: 0;background-color: white;}
+.haowu-list li:nth-child(1){margin-top: 0;}
+.haowu-list li{border-bottom: 0.0166rem solid rgb(225,225,225);padding-bottom: 0.3rem;}
+.haowu-list li h3{font-size: 0.498rem;}
+.haowu-list li h5{line-height: 0.6rem;}
+
+
+.xianzhi-list{background-color: white;}
