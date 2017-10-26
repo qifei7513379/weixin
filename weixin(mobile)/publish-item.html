@@ -61,16 +61,18 @@
 			<ul class="publish-input-list">
 				<li>
 					<label for="" class="flex-label-1">标题</label>
-					<input class="flex-input-1" type="" name="" id="" value="" placeholder="请输入标题 2-35字"/>
+					<input class="flex-input-1" type="" name="" id="" value="" placeholder="请输入标题 2-35字" maxlength="35"/>
 				</li>
 				<li style="height: 0;padding-left: 0.5rem;margin: 0;border-bottom: 0.0166rem solid gainsboro;margin-left: 0.8rem;"></li>
 				<li>
 					<label for=""class="flex-label-1">价格</label>
-					<input class="flex-input-2" type="number" name="" id="" value="" placeholder="￥0"/>
+					<div class="opt">
+		                <input class="magic-checkbox" type="checkbox" name="layout" id="c1">
+		                <label for="c1">面议</label>
+            		</div>
 					<div class="shuxian">|</div>
-					<input type="checkbox" class="flex-input-3"/>
-					<label for="">面议</label>
-					
+					<input class="flex-input-2" type="number" name="" id="" value="" placeholder="￥0"/>
+						
 				</li>
 			</ul>
 		</div>
@@ -79,9 +81,12 @@
 			<ul class="publish-input-list">
 				<li>
 					<label for="" class="flex-label-1">区域</label>
+				    
+				    <select id="di-a3" name="di-a3"></select>
+				    <select id="di-a2" name="di-a2"></select>
 				    <select id="di-a1" name="di-a1"></select>
-					<select id="di-a2" name="di-a2"></select>
-					<select id="di-a3" name="di-a3"></select>
+					
+					
 				</li>
 				<li style="height: 0;padding-left: 0.5rem;margin: 0;border-bottom: 0.0166rem solid gainsboro;margin-left: 0.8rem;"></li>
 				<li>
